@@ -11,3 +11,101 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* below was imported */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #efedd6; */
+  background-image: radial-gradient(
+    rgba(172, 221, 82, 0.9),
+    rgba(223, 142, 243, 0.6)
+  );
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  background-image: radial-gradient(
+    rgba(172, 221, 82, 0.4),
+    rgba(223, 142, 243, 0.1)
+  );
+}
+
+.box {
+  /* background-color: steelblue; */
+  background: url(https://yokoiwasaki.netlify.app/images/images-kota/kota-02.jpg)
+    top center/cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+}
+.box-even {
+  /* background-color: steelblue; */
+  background: url(https://yokoiwasaki.netlify.app/images-kota/kota-03.jpg) top
+    center/cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.box-even:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box-even.show {
+  transform: translateX(0);
+}
+
+.box-even h2 {
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+}
